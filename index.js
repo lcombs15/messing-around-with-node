@@ -1,11 +1,15 @@
 const chalk = require('chalk');
 
-const colorFun = chalk[process.argv[2]];
-let whatToPrint = 'Hello, world!';
-if (colorFun){
-    whatToPrint = colorFun(whatToPrint)
-} else {
-    console.log(chalk.red('Sorry, I don\'t have that color.'));
+function print(str, color){
+    const colorFun = chalk[color];
+    if (colorFun){
+        str = colorFun(str)
+    } else {
+        console.log(chalk.red('Sorry, I don\'t have that color.'));
+    }
+    console.log(str)
 }
 
-console.log(whatToPrint);
+module.exports = {
+    print
+};
