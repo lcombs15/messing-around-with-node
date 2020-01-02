@@ -1,0 +1,17 @@
+{
+  "name": "@lcombs15/messing-around-with-node",
+  "engines": {
+    "node": "12.13.0"
+  },
+  "version": "1.0.0",
+  "description": "Learning node.....",
+  "main": "index.js",
+  "repository": "https://github.com/lcombs15/messing-around-with-node",
+  "author": "Lucas Combs <l-combs@hotmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "yarg": "^1.0.8",
+    "chalk": "^3.0.0"
+  }
+}
