@@ -1,7 +1,8 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
-function print(str, color){
-    const colorFun = chalk[color];
+
+export function print(str: string, color: string){
+    let colorFun = (chalk as any)[color];
     if (colorFun){
         str = colorFun(str)
     } else {
@@ -9,7 +10,3 @@ function print(str, color){
     }
     console.log(str)
 }
-
-module.exports = {
-    print
-};
