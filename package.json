@@ -3,15 +3,18 @@
   "engines": {
     "node": "12.13.0"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Learning node.....",
-  "main": "index.js",
+  "main": "index.ts",
   "repository": "https://github.com/lcombs15/messing-around-with-node",
   "author": "Lucas Combs <l-combs@hotmail.com>",
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "yarg": "^1.0.8",
-    "chalk": "^3.0.0"
+    "@types/node": "^13.1.2",
+    "chalk": "^3.0.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4",
+    "yarg": "^1.0.8"
   }
 }
