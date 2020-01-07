@@ -3,9 +3,15 @@
   "engines": {
     "node": "12.13.0"
   },
-  "version": "1.1.0",
+  "files": ["dist/**/*"],
+  "version": "1.1.2",
   "description": "Learning node.....",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "scripts": {
+    "tsc": "rm -rf dist && tsc --outDir dist",
+    "dev:run": "ts-node cli.ts"
+  },
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/lcombs15/messing-around-with-node",
   "author": "Lucas Combs <l-combs@hotmail.com>",
   "license": "MIT",
